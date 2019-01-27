@@ -1,0 +1,400 @@
+Dependencies for Project 'RTOSDemo', Target 'Target 1': (DO NOT MODIFY !)
+F (.\STM32F10x.s)(0x52381025)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "STM32F10X_MD SETA 1"--list .\stm32f10x.lst --xref -o ..\obj\stm32f10x.o --depend ..\obj\stm32f10x.d)
+F (..\Common\drivers\ST\STM32F10xFWLib\src\lcd.c)(0x52FA0C72)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\lcd.o --omf_browse ..\obj\lcd.crf --depend ..\obj\lcd.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\lcd.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\spi_flash.h)(0x52381025)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+F (..\Common\drivers\ST\STM32F10xFWLib\src\cortexm3_macro_rvds.s)(0x52381089)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "STM32F10X_MD SETA 1"--list .\cortexm3_macro_rvds.lst --xref -o ..\obj\cortexm3_macro_rvds.o --depend ..\obj\cortexm3_macro_rvds.d)
+F (.\STM32F10xFWLib\src\stm32f10x_usart.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+F (.\STM32F10xFWLib\src\stm32f10x_gpio.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+F (.\STM32F10xFWLib\src\stm32f10x_lib.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_lib.o --omf_browse ..\obj\stm32f10x_lib.crf --depend ..\obj\stm32f10x_lib.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+F (.\STM32F10xFWLib\src\stm32f10x_nvic.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_nvic.o --omf_browse ..\obj\stm32f10x_nvic.crf --depend ..\obj\stm32f10x_nvic.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+F (.\STM32F10xFWLib\src\stm32f10x_rcc.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+F (.\STM32F10xFWLib\src\stm32f10x_spi.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_spi.o --omf_browse ..\obj\stm32f10x_spi.crf --depend ..\obj\stm32f10x_spi.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+F (.\STM32F10xFWLib\src\stm32f10x_systick.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_systick.o --omf_browse ..\obj\stm32f10x_systick.crf --depend ..\obj\stm32f10x_systick.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+F (.\STM32F10xFWLib\src\stm32f10x_tim.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\stm32f10x_tim.o --omf_browse ..\obj\stm32f10x_tim.crf --depend ..\obj\stm32f10x_tim.d)
+I (.\STM32F10xFWLib\inc\stm32f10x_tim.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+F (.\ParTest\ParTest.c)(0x573F3A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\partest.o --omf_browse ..\obj\partest.crf --depend ..\obj\partest.d)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Common\include\partest.h)(0x573F3A12)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+F (.\serial\serial.c)(0x573F3A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\serial.o --omf_browse ..\obj\serial.crf --depend ..\obj\serial.d)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (..\Source\include\semphr.h)(0x573F3A16)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+I (..\Common\include\serial.h)(0x573F3A12)
+F (.\timertest.c)(0x573F3A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\timertest.o --omf_browse ..\obj\timertest.crf --depend ..\obj\timertest.d)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_tim.h)(0x52381026)
+F (.\main.c)(0x573F3A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (.\STM32F10xFWLib\inc\stm32f10x_it.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\lcd.h)(0x52381025)
+I (LCD_Message.h)(0x52381026)
+I (..\Common\include\BlockQ.h)(0x573F3A12)
+I (..\Common\include\death.h)(0x573F3A12)
+I (..\Common\include\integer.h)(0x573F3A12)
+I (..\Common\include\blocktim.h)(0x573F3A12)
+I (..\Common\include\partest.h)(0x573F3A12)
+I (..\Common\include\semtest.h)(0x573F3A12)
+I (..\Common\include\PollQ.h)(0x573F3A12)
+I (..\Common\include\flash.h)(0x573F3A12)
+I (..\Common\include\comtest2.h)(0x573F3A12)
+F (.\spi_flash.c)(0x52381025)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\spi_flash.o --omf_browse ..\obj\spi_flash.crf --depend ..\obj\spi_flash.d)
+I (.\STM32F10xFWLib\inc\spi_flash.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_lib.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_map.h)(0x52381025)
+I (..\Project\stm32f10x_conf.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_type.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\cortexm3_macro.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_exti.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_gpio.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_nvic.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_rcc.h)(0x52381025)
+I (.\STM32F10xFWLib\inc\stm32f10x_spi.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_systick.h)(0x52381026)
+I (.\STM32F10xFWLib\inc\stm32f10x_usart.h)(0x52381026)
+F (..\Common\Minimal\semtest.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\semtest.o --omf_browse ..\obj\semtest.crf --depend ..\obj\semtest.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\semphr.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (..\Common\include\semtest.h)(0x573F3A12)
+F (..\Common\Minimal\BlockQ.c)(0x573F3A12)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\blockq.o --omf_browse ..\obj\blockq.crf --depend ..\obj\blockq.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (..\Common\include\BlockQ.h)(0x573F3A12)
+F (..\Common\Minimal\blocktim.c)(0x573F3A12)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\blocktim.o --omf_browse ..\obj\blocktim.crf --depend ..\obj\blocktim.d)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (..\Common\include\blocktim.h)(0x573F3A12)
+F (..\Common\Minimal\comtest.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\comtest.o --omf_browse ..\obj\comtest.crf --depend ..\obj\comtest.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Common\include\serial.h)(0x573F3A12)
+I (..\Common\include\comtest.h)(0x573F3A12)
+I (..\Common\include\partest.h)(0x573F3A12)
+F (..\Common\Minimal\death.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\death.o --omf_browse ..\obj\death.crf --depend ..\obj\death.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Common\include\death.h)(0x573F3A12)
+F (..\Common\Minimal\flash.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\flash.o --omf_browse ..\obj\flash.crf --depend ..\obj\flash.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Common\include\partest.h)(0x573F3A12)
+I (..\Common\include\flash.h)(0x573F3A12)
+F (..\Common\Minimal\integer.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\integer.o --omf_browse ..\obj\integer.crf --depend ..\obj\integer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Common\include\integer.h)(0x573F3A12)
+F (..\Common\Minimal\PollQ.c)(0x573F3A13)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\pollq.o --omf_browse ..\obj\pollq.crf --depend ..\obj\pollq.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+I (..\Common\include\PollQ.h)(0x573F3A12)
+F (..\Source\list.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\list.o --omf_browse ..\obj\list.crf --depend ..\obj\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+F (..\Source\queue.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\queue.o --omf_browse ..\obj\queue.crf --depend ..\obj\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\queue.h)(0x573F3A16)
+F (..\Source\tasks.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\tasks.o --omf_browse ..\obj\tasks.crf --depend ..\obj\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+I (..\Source\include\timers.h)(0x573F3A16)
+I (..\Source\include\StackMacros.h)(0x573F3A16)
+F (..\Source\portable\RVDS\ARM_CM3\port.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\port.o --omf_browse ..\obj\port.crf --depend ..\obj\port.d)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)
+F (..\Source\portable\MemMang\heap_2.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\Common\include -I ..\Source\include -I .\STM32F10xFWLib\inc -I ..\Project-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DRVDS_ARMCM3_LM3S102-o ..\obj\heap_2.o --omf_browse ..\obj\heap_2.crf --depend ..\obj\heap_2.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Project\FreeRTOSConfig.h)(0x573F3A14)
+I (..\Source\include\projdefs.h)(0x573F3A16)
+I (..\Source\include\portable.h)(0x573F3A16)
+I (..\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h)(0x573F3A17)
+I (..\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\Source\include\task.h)(0x573F3A16)
+I (..\Source\include\list.h)(0x573F3A16)

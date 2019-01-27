@@ -1,0 +1,16 @@
+..\obj\comtest.o: ..\Common\Minimal\comtest.c
+..\obj\comtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\comtest.o: ..\Source\include\FreeRTOS.h
+..\obj\comtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\comtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\comtest.o: ..\Project\FreeRTOSConfig.h
+..\obj\comtest.o: ..\Source\include\projdefs.h
+..\obj\comtest.o: ..\Source\include\portable.h
+..\obj\comtest.o: ..\Source\include\deprecated_definitions.h
+..\obj\comtest.o: ..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+..\obj\comtest.o: ..\Source\include\mpu_wrappers.h
+..\obj\comtest.o: ..\Source\include\task.h
+..\obj\comtest.o: ..\Source\include\list.h
+..\obj\comtest.o: ..\Common\include\serial.h
+..\obj\comtest.o: ..\Common\include\comtest.h
+..\obj\comtest.o: ..\Common\include\partest.h
