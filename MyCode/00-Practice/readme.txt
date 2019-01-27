@@ -19,3 +19,13 @@ files.
 See also -
 http://www.freertos.org/FreeRTOS-quick-start-guide.html
 http://www.freertos.org/FAQHelp.html
+
+
+2019年1月28日00:18:59
+该文件用于练习FreeRTOS for M3
+今日上传的是最小系统，具体文件有待修改，仅仅是编译通过没有错误，并没有实现任何的功能。
+
+明日计划：
+1、实现两个LED灯的循环闪烁
+
+
