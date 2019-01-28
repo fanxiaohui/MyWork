@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4097</DriverSelection>
+            <DriverSelection>4100</DriverSelection>
           </Flash1>
           <bUseTDR>0</bUseTDR>
-          <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -380,63 +380,6 @@
       <Groups>
         <Group>
           <GroupName>System</GroupName>
-          <Files>
-            <File>
-              <FileName>STM32F10x.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\STM32F10x.s</FilePath>
-            </File>
-            <File>
-              <FileName>lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\lcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>cortexm3_macro_rvds.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\cortexm3_macro_rvds.s</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_lib.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_lib.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_nvic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_nvic.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_systick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_systick.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_tim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\STM32F10xFWLib\src\stm32f10x_tim.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>Demo Files</GroupName>
@@ -509,6 +452,66 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>STM32F10x.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\STM32F10x.s</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>cortexm3_macro_rvds.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\cortexm3_macro_rvds.s</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_lib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_lib.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_nvic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_nvic.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32F10xFWLib\src\stm32f10x_tim.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>FreeRTOS files</GroupName>
           <Files>
             <File>
@@ -535,6 +538,26 @@
               <FileName>heap_2.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source\portable\MemMang\heap_2.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MyCode</GroupName>
+          <Files>
+            <File>
+              <FileName>Led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Driver\LED\Led.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Doc</GroupName>
+          <Files>
+            <File>
+              <FileName>readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\readme.txt</FilePath>
             </File>
           </Files>
         </Group>
