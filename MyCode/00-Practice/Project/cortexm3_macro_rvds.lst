@@ -405,9 +405,8 @@ ARM Macro Assembler    Page 7
   282 0000006E                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=..\obj\cortexm3_macro_rvds.d -o..\obj\cortexm3_macro_rvds.o -I.\RT
-E\_Target_1 -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include -IC:\
-Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISIO
-N_VERSION SETA 525" --predefine="STM32F10X_MD SETA 1" --list=.\cortexm3_macro_r
+E\_Target_1 -IC:\Keil_v5\ARM\CMSIS\Include -IDevice\Include --predefine="__MICR
+OLIB SETA 1" --predefine="__UVISION_VERSION SETA 524" --list=.\cortexm3_macro_r
 vds.lst ..\Common\drivers\ST\STM32F10xFWLib\src\cortexm3_macro_rvds.s
 
 
@@ -653,4 +652,4 @@ _rvds.s
 _rvds.s
 Comment: __WFI used once
 22 symbols
-355 symbols in table
+354 symbols in table
