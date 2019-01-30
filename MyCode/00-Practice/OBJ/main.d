@@ -25,8 +25,6 @@
 ..\obj\main.o: .\STM32F10xFWLib\inc\stm32f10x_spi.h
 ..\obj\main.o: .\STM32F10xFWLib\inc\stm32f10x_systick.h
 ..\obj\main.o: .\STM32F10xFWLib\inc\stm32f10x_usart.h
-..\obj\main.o: .\STM32F10xFWLib\inc\lcd.h
-..\obj\main.o: LCD_Message.h
 ..\obj\main.o: ..\Common\include\BlockQ.h
 ..\obj\main.o: ..\Common\include\death.h
 ..\obj\main.o: ..\Common\include\integer.h
