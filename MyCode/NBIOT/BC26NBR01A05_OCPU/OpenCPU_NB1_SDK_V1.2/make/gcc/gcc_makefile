@@ -19,8 +19,8 @@ GCC_INSTALL_PATH=tools\gcc\win\gcc-arm-none-eabi
 GCC_VERSION=4.8.3
 
 
-#C_PREDEF=-D __CUSTOMER_CODE__
-C_PREDEF=-D __EXAMPLE_IIC__
+C_PREDEF=-D __CUSTOMER_CODE__
+#C_PREDEF=-D __EXAMPLE_IIC__
 #C_PREDEF=-D__CUSTOMER_CODE__
 #C_PREDEF=-D__CUSTOMER1_CODE__
 #-------------------------------------------------------------------------------
