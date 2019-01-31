@@ -226,6 +226,9 @@ s32 Ql_GPIO_SetPullSelection(Enum_PinName pinName, Enum_PinPullSel pullSel);
 *****************************************************************/
 s32 Ql_GPIO_Uninit(Enum_PinName pinName);
 
-void GPIO_Program(void)；
+//GPIO Test
+void Custom_GPIO_Program(void);
+
+
 
 #endif  // __QL_GPIO_H__

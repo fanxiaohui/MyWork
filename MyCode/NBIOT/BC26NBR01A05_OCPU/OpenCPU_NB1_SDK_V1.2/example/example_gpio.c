@@ -78,6 +78,7 @@ static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, boo
      
 }
 static void GPIO_Program(void)
+//void GPIO_Program(void)
 {
     // Specify a GPIO pin
     Enum_PinName  gpioPin = PINNAME_NETLIGHT;
@@ -107,6 +108,7 @@ static void GPIO_Program(void)
     Ql_GPIO_SetLevel(gpioPin, PINLEVEL_HIGH);
     APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n", Ql_GPIO_GetLevel(gpioPin));
 }
+
 
 /************************************************************************/
 /* The entrance for this example application                            */

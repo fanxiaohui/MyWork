@@ -146,6 +146,7 @@ static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, boo
                 p2 = Ql_strstr(m_Read_Buffer, "\r\n");
                 Ql_memset(NumberBuf, 0x0, sizeof(NumberBuf));
                 Ql_memcpy(NumberBuf, p1 + 1, p2 - p1 -1);
+
                 IIC_type = Ql_atoi(NumberBuf);
                 if(0 == IIC_type)// simultion iic test, and we choose PINNAME_GPIO4, PINNAME_GPIO5 for IIC SCL and SDA pins
                 {                    
@@ -256,7 +257,7 @@ static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, boo
             ret = Ql_strncmp(m_Read_Buffer, m_buffer, Ql_strlen(m_buffer));                
             if(0 == ret)
             {
-                ret = Ql_IIC_Write(1,I2C_SlaveAddr,(u8*)I2C_SendBuf,2);
+                ret = Ql_IIC_Write(1,I2C_SlaveAddr,(u8*)I2C_SendBuf,5);
                 if(ret < 0)
                 {
                     APP_DEBUG("\r\n<--Failed !! IIC controller Ql_IIC_Write channel 1 fail ret=%d-->\r\n",ret);

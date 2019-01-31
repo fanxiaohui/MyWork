@@ -58,7 +58,6 @@
 #include "ql_system.h"
 #include "ql_stdlib.h"
 #include "ql_error.h"
-#include "ql_gpio.h"
 
 
 #define DEBUG_ENABLE 1
@@ -82,7 +81,7 @@ static char DBG_BUFFER[DBG_BUF_LEN];
 
 
 
-#define MAX_TASK_NUM                    3
+#define MAX_TASK_NUM                    11
 #define MSG_ID_USER_DATA                MSG_ID_USER_START+0x100
 #define MSG_ID_MUTEX_TEST               MSG_ID_USER_START+0x101
 #define MSG_ID_SEMAPHORE_TEST           MSG_ID_USER_START+0x102
@@ -199,23 +198,6 @@ void SendEvent2AllSubTask(u32 msgId,u32 iData1, u32 iData2)
 }
 
 /**************************************************************
-* gpio task
-***************************************************************/
-
-/*void led_test(void)
-{
-    /*init Gpio*/
-/*
-    Ql_GPIO_SetLevel(PINNAME_NETLIGHT, PINLEVEL_HIGH);
-    APP_DEBUG("<-- Set GPIO pin (PINNAME_STATUS): output, high level, pull up -->\r\n");
-    Ql_Sleep(1000);
-    Ql_GPIO_SetLevel(PINNAME_NETLIGHT, PINLEVEL_LOW);
-    APP_DEBUG("<-- Set GPIO pin (PINNAME_STATUS): output, low level, pull up -->\r\n");
-    Ql_Sleep(1000);
-
-}*/
-
-/**************************************************************
 * main task
 ***************************************************************/
 void proc_main_task(s32 taskId)
@@ -226,37 +208,18 @@ void proc_main_task(s32 taskId)
     Ql_UART_Register(m_myUartPort, CallBack_UART_Hdlr, NULL);
     Ql_UART_Open(m_myUartPort, 115200, FC_NONE);
 
-    Ql_GPIO_Init(PINNAME_NETLIGHT, PINDIRECTION_OUT, PINLEVEL_HIGH, PINPULLSEL_PULLUP);
-    APP_DEBUG("<-- Initialize GPIO pin (PINNAME_STATUS): output, high level, pull up -->\r\n");
-
-    Ql_GPIO_SetLevel(PINNAME_NETLIGHT, PINLEVEL_HIGH);
-    APP_DEBUG("<-- Set GPIO pin (PINNAME_STATUS): output, high level, pull up -->\r\n");
-    Ql_Sleep(1000);
-    Ql_GPIO_SetLevel(PINNAME_NETLIGHT, PINLEVEL_LOW);
-    APP_DEBUG("<-- Set GPIO pin (PINNAME_STATUS): output, low level, pull up -->\r\n");
-    Ql_Sleep(1000);
-
-    APP_DEBUG("\r\n<--OpenCPU: multitask TEST!-->\r\n"); 
-
-    //led_test();    //led test
+    APP_DEBUG("\r\n<--OpenCPU: multitask TEST!-->\r\n");  
 
     while (1)
     {
-         
          Ql_OS_GetMessage(&msg);
-         APP_DEBUG("\r\n<--OpenCPU: multitask TEST the first task1!-->\r\n"); 
-         s_iPassTask=subtask1_id;
-         APP_DEBUG("\r\n<--TaskId: the taskid is = %d-->\r\n",s_iPassTask); 
-
-         Ql_OS_SendMessage(s_iPassTask, MSG_ID_USER_DATA, 0, 0);
-
         switch(msg.message)
         {
         case 0:
             break;
         default:
             break;
-        }       
+        }        
     }
 }
 
@@ -374,7 +337,6 @@ void proc_subtask1(s32 TaskId)
     ST_MSG subtask1_msg;
     
     Ql_Debug_Trace("<--multitask: example_task1_entry-->\r\n");
-   // led_test();
     while(keepGoing)
     {    
         Ql_OS_GetMessage(&subtask1_msg);
@@ -395,7 +357,6 @@ void proc_subtask1(s32 TaskId)
                     {
                         s_iPassTask++;
                     }
-
                     Ql_OS_SendMessage(s_iPassTask, MSG_ID_USER_DATA,subtask1_msg.param1, subtask1_msg.param2);
                 
                 break;
@@ -423,7 +384,6 @@ void proc_subtask1(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }    
 }
 
@@ -440,7 +400,6 @@ void proc_subtask2(s32 TaskId)
 
     while(keepGoing)
     {    
-
         Ql_OS_GetMessage(&subtask2_msg);
         switch(subtask2_msg.message)
         {
@@ -486,7 +445,6 @@ void proc_subtask2(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -548,7 +506,6 @@ void proc_subtask3(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -608,7 +565,6 @@ void proc_subtask4(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -669,7 +625,6 @@ void proc_subtask5(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -679,8 +634,7 @@ void proc_subtask5(s32 TaskId)
 void proc_subtask6(s32 TaskId)
 {
     bool keepGoing = TRUE;
-    ST_MSG subtask6_msg;
-
+    ST_MSG subtask6_msg;
     
     Ql_Debug_Trace("<--multitask: example_task6_entry-->\r\n");
 
@@ -731,7 +685,6 @@ void proc_subtask6(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -791,7 +744,6 @@ void proc_subtask7(s32 TaskId)
             default:
                 break;
         }
-         Ql_Sleep(1000);
     }
 }
 
@@ -808,7 +760,6 @@ void proc_subtask8(s32 TaskId)
     while(keepGoing)
     {    
         Ql_OS_GetMessage(&subtask8_msg);
-
         switch(subtask8_msg.message)
         {
             case MSG_ID_USER_DATA:
@@ -818,18 +769,7 @@ void proc_subtask8(s32 TaskId)
                         subtask8_msg.message,\
                         subtask8_msg.param1, \
                         subtask8_msg.param2);
-
-                        if(s_iPassTask == MAX_TASK_NUM)
-                        {
-                         s_iPassTask = main_task_id;
-                        }
-                         else
-                        {
-                         s_iPassTask++;
-                        }
-                        Ql_OS_SendMessage(s_iPassTask, MSG_ID_USER_DATA,subtask8_msg.param1, subtask8_msg.param2);
-                        APP_DEBUG("\r\n<--Return the first task-->\r\n");
-                    break;
+                break;
             }
             case MSG_ID_MUTEX_TEST:
             {
@@ -854,7 +794,6 @@ void proc_subtask8(s32 TaskId)
             default:
                 break;
         }
-        Ql_Sleep(1000);
     }
 }
 
