@@ -228,7 +228,7 @@ s32 Ql_GPIO_Uninit(Enum_PinName pinName);
 
 //GPIO Test
 void Custom_GPIO_Program(void);
-
-
+void Custom_GPIO_Init (void);
+//void Gpio_Test(void);
 
 #endif  // __QL_GPIO_H__

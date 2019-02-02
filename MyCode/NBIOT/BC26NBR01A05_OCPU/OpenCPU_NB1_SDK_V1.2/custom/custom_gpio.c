@@ -27,7 +27,6 @@
 
 #include "custom_Test.h"
 
-
 // Define the UART port 
 /*
 static Enum_SerialPort m_myUartPort  = UART_PORT0;
@@ -49,6 +48,7 @@ void Custom_GPIO_Program(void)
 
     // Initialize the GPIO pin (output high level, pull up)
     Ql_GPIO_Init(gpioPin, PINDIRECTION_OUT, gpioLvl, PINPULLSEL_PULLUP);
+
     APP_DEBUG("<-- Initialize GPIO pin (PINNAME_STATUS): output, high level, pull up -->\r\n");
 
     // Get the direction of GPIO
@@ -56,6 +56,49 @@ void Custom_GPIO_Program(void)
 
     // Get the level value of GPIO
     APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n\r\n", Ql_GPIO_GetLevel(gpioPin));
+    for(;;)
+    {
+    // Set the GPIO level to low after 500ms.
+    APP_DEBUG("<-- Set the GPIO level to low after 500ms -->\r\n");
+    Ql_Sleep(500);
+    Ql_GPIO_SetLevel(gpioPin, PINLEVEL_LOW);
+    APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n\r\n", Ql_GPIO_GetLevel(gpioPin));
+
+    // Set the GPIO level to high after 500ms.
+    APP_DEBUG("<-- Set the GPIO level to high after 500ms -->\r\n");
+    Ql_Sleep(500);
+    Ql_GPIO_SetLevel(gpioPin, PINLEVEL_HIGH);
+    APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n", Ql_GPIO_GetLevel(gpioPin));
+
+    APP_DEBUG("OpenCPU: Customer Application GPIO_TEST!\r\n");
+    }
+}
+
+void Custom_GPIO_Init (void)
+{
+      // Specify a GPIO pin
+    Enum_PinName  gpioPin = PINNAME_NETLIGHT;
+
+    // Define the initial level for GPIO pin
+    Enum_PinLevel gpioLvl = PINLEVEL_HIGH;
+
+    // Initialize the GPIO pin (output high level, pull up)
+    Ql_GPIO_Init(gpioPin, PINDIRECTION_OUT, gpioLvl, PINPULLSEL_PULLUP);  
+    APP_DEBUG("<-- Custom GPIO_Init Fashined!!! -->\r\n");
+
+}
+
+
+void proc_reserved3(void)
+{ 
+ //   Custom_GPIO_Init ();
+        // Specify a GPIO pin
+    Enum_PinName  gpioPin = PINNAME_NETLIGHT;
+
+    // Define the initial level for GPIO pin
+    Enum_PinLevel gpioLvl = PINLEVEL_HIGH;
+    for(;;)
+    {
 
     // Set the GPIO level to low after 500ms.
     APP_DEBUG("<-- Set the GPIO level to low after 500ms -->\r\n");
@@ -68,5 +111,9 @@ void Custom_GPIO_Program(void)
     Ql_Sleep(500);
     Ql_GPIO_SetLevel(gpioPin, PINLEVEL_HIGH);
     APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n", Ql_GPIO_GetLevel(gpioPin));
+
+    APP_DEBUG("<-- Thi is LED TEST Task!!! -->\r\n");
+
+    }
 }
 

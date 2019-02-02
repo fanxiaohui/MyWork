@@ -1,4 +1,21 @@
-
+/*
+ *
+ * Filename:
+ * ---------
+ *   custom.h 
+ *
+ * Project:
+ * --------
+ *   OpenCPU
+ *
+ * Description:
+ * ------------
+ *  
+ *
+ * Author:客户自己的.h文件
+ * -------
+ * -------
+ */
 
 
 #ifndef __CUSTOM_TEST_H__
@@ -23,5 +40,7 @@ static char DBG_BUFFER[DBG_BUF_LEN];
 #define APP_DEBUG(FORMAT,...) 
 #endif
 
+
+s32 ATResponse_Handler(char* line, u32 len, void* userData);
 
 #endif

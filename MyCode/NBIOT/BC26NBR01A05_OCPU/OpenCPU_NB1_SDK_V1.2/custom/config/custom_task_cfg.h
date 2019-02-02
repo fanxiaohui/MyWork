@@ -53,6 +53,18 @@ TASK_ITEM(proc_main_task,       main_task_id,   10*1024, DEFAULT_VALUE1, DEFAULT
 TASK_ITEM(proc_reserved1,       reserved1_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
 TASK_ITEM(proc_reserved2,       reserved2_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
 
+//add a new task test led for GPIO
+TASK_ITEM(proc_reserved3,       reserved3_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+//add the fourth TASK for init AT commed
+TASK_ITEM(proc_reserved4,       reserved4_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+
+TASK_ITEM(proc_reserved5,       reserved5_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+TASK_ITEM(proc_reserved6,       reserved6_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+TASK_ITEM(proc_reserved7,       reserved7_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+TASK_ITEM(proc_reserved8,       reserved8_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+TASK_ITEM(proc_reserved9,       reserved9_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+TASK_ITEM(proc_reserved10,       reserved10_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+//最大支持10个任务
 
 #ifdef __EXAMPLE_MULTITASK__
 TASK_ITEM(proc_subtask1,  subtask1_id, 5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)

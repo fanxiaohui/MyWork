@@ -70,8 +70,8 @@ static Enum_SerialPort m_myUartPort  = UART_PORT0;
 static u8 m_RxBuf_Uart[SERIAL_RX_BUFFER_LEN];
 
 static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, bool level, void* customizedPara);
-static s32 ATResponse_Handler(char* line, u32 len, void* userData);
-
+//static s32 ATResponse_Handler(char* line, u32 len, void* userData);
+s32 ATResponse_Handler(char* line, u32 len, void* userData);
 
 void proc_main_task(s32 taskId)
 { 
@@ -92,13 +92,16 @@ void proc_main_task(s32 taskId)
 
     APP_DEBUG("OpenCPU: Customer Application\r\n");
 
-    Custom_GPIO_Program();
+//    Custom_GPIO_Init ();
+//    Ql_GPIO_Init(gpioPin, PINDIRECTION_OUT, gpioLvl, PINPULLSEL_PULLUP);
+     Custom_GPIO_Init ();
+  
 
-    APP_DEBUG("OpenCPU: Customer Application GPIO_TEST!\r\n");
 
     // START MESSAGE LOOP OF THIS TASK
     while(TRUE)
     {
+
         Ql_OS_GetMessage(&msg);
         switch(msg.message)
         {
@@ -131,6 +134,9 @@ void proc_main_task(s32 taskId)
         default:
             break;
         }
+ //      Gpio_Test();
+  // Custom_GPIO_Program();
+ //    Gpio_Test();
     }
 
 }
@@ -208,7 +214,8 @@ static void CallBack_UART_Hdlr(Enum_SerialPort port, Enum_UARTEventType msg, boo
     }
 }
 
-static s32 ATResponse_Handler(char* line, u32 len, void* userData)
+//static s32 ATResponse_Handler(char* line, u32 len, void* userData)
+s32 ATResponse_Handler(char* line, u32 len, void* userData)
 {
     APP_DEBUG("[ATResponse_Handler] %s\r\n", (u8*)line);
     
@@ -231,5 +238,6 @@ static s32 ATResponse_Handler(char* line, u32 len, void* userData)
     
     return RIL_ATRSP_CONTINUE; //continue wait
 }
+
 
 #endif // __CUSTOMER_CODE__
