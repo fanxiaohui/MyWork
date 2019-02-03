@@ -101,8 +101,10 @@ void proc_main_task(s32 taskId)
     // START MESSAGE LOOP OF THIS TASK
     while(TRUE)
     {
-
+        APP_DEBUG("Main Test!!\r\n");
+       
         Ql_OS_GetMessage(&msg);
+        
         switch(msg.message)
         {
         case MSG_ID_RIL_READY:
@@ -134,9 +136,7 @@ void proc_main_task(s32 taskId)
         default:
             break;
         }
- //      Gpio_Test();
-  // Custom_GPIO_Program();
- //    Gpio_Test();
+
     }
 
 }

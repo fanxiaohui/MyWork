@@ -35,13 +35,13 @@ void proc_reserved4(void)
     {
  	  	 s32 ret;
    		 ret = Ql_RIL_SendATCmd("AT+CEREG?\n", Ql_strlen("AT+CEREG?\n"), ATResponse_Handler, NULL, 0);
-   		 APP_DEBUG("<--  This is ATCommed Test!-->\r\n");
+   		 APP_DEBUG("<-- AT+CEREG?-->\r\n");
    		 Ql_Sleep(500);
     }
 
 }
 
-
+/*
 //This Task For Init AT Commed 
 void proc_reserved5(void)
 {
@@ -110,3 +110,4 @@ void proc_reserved10(void)
     }
 
 }
+*/
