@@ -29,18 +29,23 @@
 
 
 //This Task For Init AT Commed 
+/*
 void proc_reserved4(void)
 {
+  //  s32 ret;
+    s8 ret;
     for(;;)
     {
- 	  	 s32 ret;
-   		 ret = Ql_RIL_SendATCmd("AT+CEREG?\n", Ql_strlen("AT+CEREG?\n"), ATResponse_Handler, NULL, 0);
+
+ 	  	 Ql_RIL_SendATCmd("AT\n", Ql_strlen("AT\n"), ATResponse_Handler, NULL, 0);
+         Ql_Sleep(500);
+   		 /*ret = Ql_RIL_SendATCmd("AT+CEREG?\n", Ql_strlen("AT+CEREG?\n"), ATResponse_Handler, NULL, 0);
    		 APP_DEBUG("<-- AT+CEREG?-->\r\n");
-   		 Ql_Sleep(500);
-    }
+   		 Ql_Sleep(500);*/
 
+   /* }
 }
-
+*/
 /*
 //This Task For Init AT Commed 
 void proc_reserved5(void)

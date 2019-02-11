@@ -49,10 +49,11 @@ const char* g_InitCmds[] = {
     //"ATS0=0\r",     // No auto-answer.  If customer want auto answer the incoming call , must change this string as "ATS0=n\r" (n=1~255).
     "AT+CEREG=1\r",    // NW registration events . 
     //"AT+CGREG=1\r", // GPRS registration events
-    //"AT+CSCON=1\r",  // 
+    "AT+CSCON=1\r",  // 
     //"AT+COLP=0\r"   // no connected line identification
 	"AT+QICFG?\r"		 //query dataformat
 //......  More customization setting can add here
+    "AT+CFUN=1\r"        //open RF
 };
 
 u32 RIL_GetInitCmdCnt(void)

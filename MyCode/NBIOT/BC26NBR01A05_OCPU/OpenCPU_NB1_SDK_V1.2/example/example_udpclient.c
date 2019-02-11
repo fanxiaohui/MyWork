@@ -104,8 +104,8 @@ static Enum_SerialPort m_myUartPort  = UART_PORT0;
 static u8 m_send_buf[SEND_BUFFER_LEN];
 static u8 m_recv_buf[RECV_BUFFER_LEN];
 
-static u8  m_SrvADDR[SRVADDR_LEN] = "220.180.239.212\0";
-static u32 m_SrvPort = 8057;
+static u8  m_SrvADDR[SRVADDR_LEN] = "121.41.12.44\0";
+static u32 m_SrvPort = 7000;
 static s32 m_socketid = -1; 
 
 static u8 send_buffer[10] = "12345678\0";  

@@ -101,18 +101,18 @@ void proc_reserved3(void)
     {
 
     // Set the GPIO level to low after 500ms.
-    APP_DEBUG("<-- Set the GPIO level to low after 500ms -->\r\n");
+  //  APP_DEBUG("<-- Set the GPIO level to low after 500ms -->\r\n");
     Ql_Sleep(500);
     Ql_GPIO_SetLevel(gpioPin, PINLEVEL_LOW);
-    APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n\r\n", Ql_GPIO_GetLevel(gpioPin));
+  //  APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n\r\n", Ql_GPIO_GetLevel(gpioPin));
 
     // Set the GPIO level to high after 500ms.
-    APP_DEBUG("<-- Set the GPIO level to high after 500ms -->\r\n");
+ //   APP_DEBUG("<-- Set the GPIO level to high after 500ms -->\r\n");
     Ql_Sleep(500);
     Ql_GPIO_SetLevel(gpioPin, PINLEVEL_HIGH);
-    APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n", Ql_GPIO_GetLevel(gpioPin));
+//    APP_DEBUG("<-- Get the GPIO level value: %d -->\r\n", Ql_GPIO_GetLevel(gpioPin));
 
-    APP_DEBUG("<-- Thi is LED TEST Task!!! -->\r\n");
+ //   APP_DEBUG("<-- This is LED TEST Task OK!!! -->\r\n");
 
     }
 }

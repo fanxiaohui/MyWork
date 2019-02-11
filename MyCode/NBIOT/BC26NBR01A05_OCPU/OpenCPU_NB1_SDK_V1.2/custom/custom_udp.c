@@ -25,7 +25,7 @@
  *   Developer can program the application based on this example.
  * 
  ****************************************************************************/
-#ifdef __CUSTOMER1_CODE__
+#ifdef __CUSTOMER_UDP_CODE__
 #include "custom_feature_def.h"
 #include "ril.h"
 #include "ril_util.h"
@@ -35,7 +35,7 @@
 #include "ql_uart.h"
 #include "ql_system.h"
 #include "ql_timer.h"
-
+#include "ril_network.h"
 
 #include "ql_gpio.h"
 
@@ -64,6 +64,14 @@ static char DBG_BUFFER[DBG_BUF_LEN];
 
 */
 
+/*****************************************************************
+* timer param
+******************************************************************/
+#define TCP_TIMER_ID          TIMER_ID_USER_START
+#define TCP_TIMER_PERIOD      1000
+#define SEND_TIMER_PERIOD     5000
+
+
 // Define the UART port and the receive data buffer
 static Enum_SerialPort m_myUartPort  = UART_PORT0;
 #define SERIAL_RX_BUFFER_LEN  2048
@@ -91,7 +99,7 @@ void proc_main_task(s32 taskId)
     }
 
 
-    APP_DEBUG("OpenCPU: Customer Application\r\n");
+    APP_DEBUG("OpenCPU: Customer UDP Test Application\r\n");
 
 //    Custom_GPIO_Init ();
 //    Ql_GPIO_Init(gpioPin, PINDIRECTION_OUT, gpioLvl, PINPULLSEL_PULLUP);
@@ -120,6 +128,12 @@ void proc_main_task(s32 taskId)
                 break;
             case URC_SIM_CARD_STATE_IND:
                 APP_DEBUG("<-- SIM Card Status:%d -->\r\n", msg.param2);
+                 if(SIM_STAT_READY == msg.param2)
+                {
+                 
+                  Ql_Timer_Start(TCP_TIMER_ID, TCP_TIMER_PERIOD, TRUE);
+                  APP_DEBUG("Wait the network!\r\n"); 
+                }
                 break;            
             case URC_EGPRS_NW_STATE_IND:
                 APP_DEBUG("<-- EGPRS Network Status:%d -->\r\n", msg.param2);

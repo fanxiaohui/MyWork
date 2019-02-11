@@ -88,7 +88,7 @@ ST_ExtWatchdogCfg* Ql_WTD_GetWDIPinCfg(void)
 
 /************************************************************************/
 /* Define the working mode of serial debug port (UART2).                */
-/*                                                                      */
+/*                                                                     */
 /* The serial debug port (UART2) may work as a common serial port, as   */
 /* well as work as a special debug port that can debug some issues      */
 /* underlay application.                                                */

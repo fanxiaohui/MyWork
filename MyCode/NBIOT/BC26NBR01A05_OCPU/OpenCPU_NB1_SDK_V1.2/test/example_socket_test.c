@@ -127,6 +127,9 @@ static void proc_handle(u8 *pData,s32 len);
 static s32 ATResponse_Handler(char* line, u32 len, void* userData);
 extern bool recv_data_format;
 extern bool send_data_format;
+
+
+
 void proc_main_task(s32 taskId)
 {
     ST_MSG msg;

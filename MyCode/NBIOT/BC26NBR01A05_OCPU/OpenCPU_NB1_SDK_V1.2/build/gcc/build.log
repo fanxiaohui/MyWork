@@ -417,18 +417,18 @@ example/utility.c:103:5: warning: suggest parentheses around assignment used as 
 example/utility.c:120:17: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
                  if (p[i+1] = (u8*)Ql_strstr((char*)p[i],">"))
                  ^
-custom/custom_app.c: In function 'proc_reserved4':
-custom/custom_app.c:37:7: warning: implicit declaration of function 'Ql_RIL_SendATCmd' [-Wimplicit-function-declaration]
-       ret = Ql_RIL_SendATCmd("AT+CEREG?\n", Ql_strlen("AT+CEREG?\n"), ATResponse_Handler, NULL, 0);
-       ^
-custom/custom_app.c:36:11: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
-       s32 ret;
-           ^
+custom/custom_app.c:42:7: warning: "/*" within comment [-Wcomment]
+       /*ret = Ql_RIL_SendATCmd("AT+CEREG?\n", Ql_strlen("AT+CEREG?\n"), ATResponse_Handler, NULL, 0);
+ ^
+In file included from custom/custom_app.c:28:0:
+custom/custom_Test.h:28:13: warning: 'DBG_BUFFER' defined but not used [-Wunused-variable]
+ static char DBG_BUFFER[DBG_BUF_LEN];
+             ^
 custom/custom_gpio.c: In function 'proc_reserved3':
 custom/custom_gpio.c:99:19: warning: unused variable 'gpioLvl' [-Wunused-variable]
      Enum_PinLevel gpioLvl = PINLEVEL_HIGH;
                    ^
-custom/custom_main.c: In function 'CallBack_UART_Hdlr':
-custom/custom_main.c:187:25: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+custom/custom_udp.c: In function 'CallBack_UART_Hdlr':
+custom/custom_udp.c:200:25: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
                      s32 ret;
                          ^
