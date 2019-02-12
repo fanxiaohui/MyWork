@@ -42,7 +42,7 @@
 #include "custom_Test.h"
 
 
-/*
+
 #define DEBUG_ENABLE 1
 #if DEBUG_ENABLE > 0
 #define DEBUG_PORT  UART_PORT0
@@ -62,7 +62,7 @@ static char DBG_BUFFER[DBG_BUF_LEN];
 #define APP_DEBUG(FORMAT,...) 
 #endif
 
-*/
+
 
 /*****************************************************************
 * timer param
@@ -109,7 +109,7 @@ void proc_main_task(s32 taskId)
     // START MESSAGE LOOP OF THIS TASK
     while(TRUE)
     {
-       
+       APP_DEBUG("123 Test!!\r\n");
         Ql_OS_GetMessage(&msg);
         
         switch(msg.message)
