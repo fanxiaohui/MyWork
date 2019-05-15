@@ -63,6 +63,9 @@ typedef enum {
 	URC_ONENET_WRITE,           // Indication for Notify the TE to Respond the Write Request 
 	URC_ONENET_READ,            // Indication fro Notify the TE to Response the Read Request
 	URC_ONENET_EXECUTE,         // Indication for Notify the TE to Response the Execute Request
+
+  URC_AT_TEST_STATE_IND,       //AT TEST
+  MSG_ID_URC_INDICATION_TEST,
     URC_SYS_END = 100,
     /*****************************************/
     /* System URC definition end             */

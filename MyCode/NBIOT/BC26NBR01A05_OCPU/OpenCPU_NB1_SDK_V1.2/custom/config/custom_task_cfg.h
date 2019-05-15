@@ -54,7 +54,10 @@ TASK_ITEM(proc_reserved1,       reserved1_id,   5*1024, DEFAULT_VALUE1, DEFAULT_
 TASK_ITEM(proc_reserved2,       reserved2_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
 
 //add a new task test led for GPIO
-TASK_ITEM(proc_reserved3,       reserved3_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+//TASK_ITEM(proc_reserved3,       reserved3_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
+
+//add a test task
+//TASK_ITEM(proc_reserved_test,       reserved4_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
 //add the fourth TASK for init AT commed
 //TASK_ITEM(proc_reserved4,       reserved4_id,   5*1024, DEFAULT_VALUE1, DEFAULT_VALUE2)
 /*

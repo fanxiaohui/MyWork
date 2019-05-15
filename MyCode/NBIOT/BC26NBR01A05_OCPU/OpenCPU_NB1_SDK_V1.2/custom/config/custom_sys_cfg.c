@@ -97,8 +97,8 @@ ST_ExtWatchdogCfg* Ql_WTD_GetWDIPinCfg(void)
 /* now only supports BASIC MODE*/
 /************************************************************************/
 static const ST_DebugPortCfg debugPortCfg = {
-     BASIC_MODE      // Set the serial  port  to a common serial port
-     //ADVANCE_MODE   // Set the serial  port to a special debug port
+     BASIC_MODE      // Set the serial  port  to a common serial port，用USB口来抓取Log
+     //ADVANCE_MODE   // Set the serial  port to a special debug port,用AUX和DBG口来抓取Log
 };
 static const ST_DebugPortSet debugPortSet = {
     PORTNAME_UART2,      // Set the serial debug port (UART2) to GKI log .Can choose UART0/UART1/UART2

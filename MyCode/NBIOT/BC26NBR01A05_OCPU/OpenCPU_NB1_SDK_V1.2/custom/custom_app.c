@@ -28,6 +28,23 @@
 #include "custom_Test.h"
 
 
+//This Task For test
+/*
+void proc_reserved_test(void)
+{
+    s32 strlen1 = 0;
+    for(;;)
+    {
+    strlen1 = Ql_strlen("sddfsdfssss\r\n"); 
+
+    APP_DEBUG("<-- strlen1=%d-->\r\n",strlen1);
+
+    Ql_Sleep(500);
+    }
+
+}
+*/
+
 //This Task For Init AT Commed 
 /*
 void proc_reserved4(void)

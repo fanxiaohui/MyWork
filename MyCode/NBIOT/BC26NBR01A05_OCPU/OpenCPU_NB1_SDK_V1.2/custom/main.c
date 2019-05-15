@@ -25,6 +25,7 @@
  *   Developer can program the application based on this example.
  * 
  ****************************************************************************/
+
 #ifdef __CUSTOMER_CODE__
 #include "custom_feature_def.h"
 #include "ril.h"
@@ -122,6 +123,7 @@ void proc_main_task(s32 taskId)
     }
 
 }
+
 
 static s32 ReadSerialPort(Enum_SerialPort port, /*[out]*/u8* pBuffer, /*[in]*/u32 bufLen)
 {
@@ -221,3 +223,5 @@ static s32 ATResponse_Handler(char* line, u32 len, void* userData)
 }
 
 #endif // __CUSTOMER_CODE__
+
+

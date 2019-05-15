@@ -37,7 +37,7 @@
  *----------------------------------------------------------------------------
  * 
  ****************************************************************************/
-#ifdef __EXAMPLE_ONENET__
+#ifdef __EXAMPLE_ONENET1__
 #include "custom_feature_def.h"
 #include "ql_stdlib.h"
 #include "ql_common.h"

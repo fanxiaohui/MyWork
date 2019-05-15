@@ -721,8 +721,8 @@ static void OnURCHandler_CFUN(const char* strURC, void* reserved)
     s32 len;
     u32 cfun;
 
-    len = Ql_strlen("\r\n+CFUN: ");
-    p1 = Ql_strstr(strURC, "\r\n+CFUN: ");
+    len = Ql_strlen("\r\n+CFUN: ");   //获取长度
+    p1 = Ql_strstr(strURC, "\r\n+CFUN: ");   //
     p1 += len;
     p2 = Ql_strstr(p1, "\r\n");
     if (p1 && p2)

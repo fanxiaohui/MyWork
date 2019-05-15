@@ -130,8 +130,6 @@ void proc_main_task(s32 taskId)
                 APP_DEBUG("<-- SIM Card Status:%d -->\r\n", msg.param2);
                  if(SIM_STAT_READY == msg.param2)
                 {
-                 
-                  Ql_Timer_Start(TCP_TIMER_ID, TCP_TIMER_PERIOD, TRUE);
                   APP_DEBUG("Wait the network!\r\n"); 
                 }
                 break;            

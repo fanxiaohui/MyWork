@@ -41,8 +41,10 @@
 
 #include "custom_Test.h"
 
+#define URC_AT_TASK_ID  reserved4_id
 
-/*
+
+
 #define DEBUG_ENABLE 1
 #if DEBUG_ENABLE > 0
 #define DEBUG_PORT  UART_PORT0
@@ -62,7 +64,7 @@ static char DBG_BUFFER[DBG_BUF_LEN];
 #define APP_DEBUG(FORMAT,...) 
 #endif
 
-*/
+
 
 // Define the UART port and the receive data buffer
 static Enum_SerialPort m_myUartPort  = UART_PORT0;
@@ -77,7 +79,7 @@ void proc_main_task(s32 taskId)
 { 
     s32 ret;
     ST_MSG msg;
-
+    
     // Register & open UART port
     ret = Ql_UART_Register(m_myUartPort, CallBack_UART_Hdlr, NULL);
     if (ret < QL_RET_OK)
@@ -93,12 +95,14 @@ void proc_main_task(s32 taskId)
 
     APP_DEBUG("OpenCPU: Customer Application\r\n");
 
+
 //    Custom_GPIO_Init ();
 //    Ql_GPIO_Init(gpioPin, PINDIRECTION_OUT, gpioLvl, PINPULLSEL_PULLUP);
      Custom_GPIO_Init ();   //初始化GPIO
 
      APP_DEBUG("Main Test!!\r\n");
     // START MESSAGE LOOP OF THIS TASK
+
     while(TRUE)
     {
        
@@ -123,9 +127,11 @@ void proc_main_task(s32 taskId)
                 break;            
             case URC_EGPRS_NW_STATE_IND:
                 APP_DEBUG("<-- EGPRS Network Status:%d -->\r\n", msg.param2);
+                Ql_OS_SendMessage(URC_AT_TASK_ID, MSG_ID_URC_INDICATION_TEST, URC_AT_TEST_STATE_IND, 1);
                 break;
             case URC_CFUN_STATE_IND:
                 APP_DEBUG("<-- CFUN Status:%d -->\r\n", msg.param2);
+                Ql_OS_SendMessage(URC_AT_TASK_ID, MSG_ID_URC_INDICATION_TEST, URC_AT_TEST_STATE_IND, 1);
                 break;  
             default:
                 APP_DEBUG("<-- Other URC: type=%d\r\n", msg.param1);

@@ -53,7 +53,7 @@ const char* g_InitCmds[] = {
     //"AT+COLP=0\r"   // no connected line identification
 	"AT+QICFG?\r"		 //query dataformat
 //......  More customization setting can add here
-    "AT+CFUN=1\r"        //open RF
+    "AT+CFUN=1\r"        //open RF  
 };
 
 u32 RIL_GetInitCmdCnt(void)

@@ -21,15 +21,20 @@ GCC_VERSION=4.8.3
 #C_PREDEF=-D __EXAMPLE_UDPCLIENT__  
 #C_PREDEF=-D __CUSTOMER1_CODE__
 
-C_PREDEF=-D __CUSTOMER_UDP_CODE__
+#C_PREDEF=-D __CUSTOMER_UDP_CODE__
 
 #C_PREDEF=-D __EXAMPLE_UDPCLIENT__ 
 
 #C_PREDEF=-D __EXAMPLE_SOCKET_TEST__
 
 #C_PREDEF=-D __EXAMPLE_IIC__
-#C_PREDEF=-D__CUSTOMER_CODE__
-#C_PREDEF=-D__CUSTOMER1_CODE__
+C_PREDEF=-D__CUSTOMER_CODE__
+#C_PREDEF=-D__CUSTOMER2_CODE__
+
+#C_PREDEF=-D__EXAMPLE_ONENET1__
+
+
+
 #-------------------------------------------------------------------------------
 # Configure version and out target
 #-------------------------------------------------------------------------------
